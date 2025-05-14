@@ -1,4 +1,4 @@
-import { useProperties } from "./context/PropertiesProvider";
+import { useProperties } from "../context/PropertiesProvider";
 
 function BalatanePosht() {
   const {
