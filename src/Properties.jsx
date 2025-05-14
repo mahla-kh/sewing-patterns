@@ -7,8 +7,8 @@ export default function Properties() {
   const [rawkar, setRawKar] = useState(17.5);
   const [kar, setKar] = useState(17.5);
   //   کارور جلو نصف!
-  const [rawJkar, setRawJKar] = useState(20);
-  const [Jkar, setJKar] = useState(20);
+  const [rawJkar, setRawJKar] = useState(17.5);
+  const [Jkar, setJKar] = useState(17.5);
   // بلندی پشت تا کمر
   const [rawkam, setRawKam] = useState(40.5);
   const [kam, setKam] = useState(40.5);

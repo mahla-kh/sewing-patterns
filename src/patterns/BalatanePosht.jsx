@@ -77,34 +77,34 @@ function BalatanePosht() {
         /> */}
       {/* راست */}
       <line
-        x1={70 + (fasin / 2) * scale}
-        y1={70 + (bolandiKafHalghe + 2) * scale}
-        x2={70 + (fasin / 2 + 1.5) * scale}
+        x1={70 + ((kar + 0.5) / 2) * scale}
+        y1={70 + (2 + bolandiKafHalghe) * scale}
+        x2={70 + ((kar + 0.5) / 2 + 1.5) * scale}
         y2={70 + (2 + kam) * scale}
         stroke="blue"
         strokeWidth="1"
       />
       <line
-        x1={70 + (fasin / 2 + 1.5) * scale}
+        x1={70 + ((kar + 0.5) / 2 + 1.5) * scale}
         y1={70 + (2 + kam) * scale}
-        x2={70 + (fasin / 2) * scale}
+        x2={70 + ((kar + 0.5) / 2) * scale}
         y2={70 + (2 + kam + ba - 6) * scale}
         stroke="blue"
         strokeWidth="1"
       />
       {/* چپ */}
       <line
-        x1={70 + (fasin / 2) * scale}
-        y1={70 + (bolandiKafHalghe + 2) * scale}
-        x2={70 + (fasin / 2 - 1.5) * scale}
+        x1={70 + ((kar + 0.5) / 2) * scale}
+        y1={70 + (2 + bolandiKafHalghe) * scale}
+        x2={70 + ((kar + 0.5) / 2 - 1.5) * scale}
         y2={70 + (2 + kam) * scale}
         stroke="blue"
         strokeWidth="1"
       />
       <line
-        x1={70 + (fasin / 2 - 1.5) * scale}
+        x1={70 + ((kar + 0.5) / 2 - 1.5) * scale}
         y1={70 + (2 + kam) * scale}
-        x2={70 + (fasin / 2) * scale}
+        x2={70 + ((kar + 0.5) / 2) * scale}
         y2={70 + (2 + kam + ba - 6) * scale}
         stroke="blue"
         strokeWidth="1"
