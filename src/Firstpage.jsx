@@ -1,6 +1,6 @@
 import React from "react";
 import Playground from "./Playground";
-import BalatanePosht from "./BalatanePosht";
+import BalatanePosht from "./patterns/BalatanePosht";
 import PropertiesPanel from "./PropertiesPanel";
 
 export default function Firstpage() {
