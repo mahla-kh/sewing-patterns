@@ -3,13 +3,15 @@ import Playground from "./Playground";
 import BalatanePosht from "./patterns/BalatanePosht";
 import PropertiesPanel from "./PropertiesPanel";
 import BalataneAnterior from "./patterns/BalataneAnterior";
+import AnteriorTest from "./patterns/AnteriorTest";
 
 export default function Firstpage() {
   return (
     <div className="full">
       <Playground>
         <BalatanePosht />
-        <BalataneAnterior />
+        {/* <BalataneAnterior /> */}
+        <AnteriorTest />
       </Playground>
       <PropertiesPanel />
     </div>
