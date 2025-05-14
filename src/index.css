@@ -1,0 +1,29 @@
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 10rem;
+}
+
+.full {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.justify-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.top-10 {
+  top: 0.3rem;
+  left: 5.5rem;
+}
