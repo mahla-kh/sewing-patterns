@@ -106,15 +106,15 @@ function BalataneAnterior() {
       />
       {/*  عمود دیوار راست */} //////////
       <line
-        x1={210 + (sin / 4 + sin / 20 + 0.5) * scale}
+        x1={210 + (sin / 4 + 1) * scale}
         y1={70 + (2 + bolandiKafHalghe) * scale}
-        x2={210 + (sin / 4 + sin / 20 - 1) * scale}
+        x2={210 + (sin / 4 - 0.5) * scale}
         y2={70 + (2 + kam) * scale}
         stroke="blue"
         strokeWidth="1"
       />
       <line
-        x1={210 + (sin / 4 + sin / 20 - 1) * scale}
+        x1={210 + (sin / 4 - 0.5) * scale}
         y1={70 + (2 + kam) * scale}
         x2={210 + (dorba / 4 + 1) * scale}
         y2={70 + (2 + kam + ba) * scale}
@@ -152,7 +152,7 @@ function BalataneAnterior() {
       <line
         x1="210"
         y1={70 + (2 + kam) * scale}
-        x2={210 + (sin / 4 + sin / 20 - 1) * scale}
+        x2={210 + (sin / 4 - 0.5) * scale}
         y2={70 + (2 + kam) * scale}
         stroke="red"
         strokeWidth="1"
@@ -262,9 +262,7 @@ function BalataneAnterior() {
      Q${210 + (Jkar + sin / 20 - 0.5) * scale},${
           70 + (((bolandiKafHalghe + 6) * 5) / 6) * scale
         }
-     ${210 + (sin / 4 + sin / 20 + 0.5) * scale},${
-          70 + (2 + bolandiKafHalghe) * scale
-        }
+     ${210 + (sin / 4 + 1) * scale},${70 + (2 + bolandiKafHalghe) * scale}
    `}
         stroke="green"
         fill="none"
