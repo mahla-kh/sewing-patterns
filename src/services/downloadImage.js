@@ -14,10 +14,12 @@ export function downloadImage() {
     canvas.width = svg.clientWidth * scale;
     canvas.height = svg.clientHeight * scale;
     const ctx = canvas.getContext("2d");
+    ctx.scale(scale, scale); // مقیاس‌دهی تصویر برای رزولوشن بالا
     ctx.drawImage(image, 0, 0);
+
     URL.revokeObjectURL(url);
 
-    // دانلود به عنوان PNG
+    // دانلود به عنوان PNG با کیفیت بالا
     const imgURL = canvas.toDataURL("image/png");
     const a = document.createElement("a");
     a.href = imgURL;
