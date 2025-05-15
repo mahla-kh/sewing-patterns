@@ -21,7 +21,7 @@ function BalatanePosht() {
         width="250"
         height="500"
         style={{ background: "#f9f9f9", border: "1px solid #ccc" }}
-        id="mySvg"
+        id="mySvg100"
       >
         {/* گردن */} /////////
         <path
@@ -235,8 +235,8 @@ function BalatanePosht() {
           strokeWidth="1"
         />
       </svg>
-      <canvas id="canvas" style={{ display: "none" }}></canvas>
-      <button onClick={downloadImage}>دانلود تصویر</button>
+      <canvas id="canvas100" style={{ display: "none" }}></canvas>
+      <button onClick={() => downloadImage(100)}>دانلود تصویر</button>
     </>
   );
 }

@@ -1,5 +1,5 @@
-export function downloadImage() {
-  const svg = document.getElementById("mySvg");
+export function downloadImage(id) {
+  const svg = document.getElementById(`mySvg${id}`);
   const svgData = new XMLSerializer().serializeToString(svg);
   const svgBlob = new Blob([svgData], {
     type: "image/svg+xml;charset=utf-8",
@@ -8,7 +8,7 @@ export function downloadImage() {
 
   const image = new Image();
   image.onload = function () {
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById(`canvas${id}`);
     const scale = 3;
 
     canvas.width = svg.clientWidth * scale;
@@ -23,7 +23,7 @@ export function downloadImage() {
     const imgURL = canvas.toDataURL("image/png");
     const a = document.createElement("a");
     a.href = imgURL;
-    a.download = "output.png";
+    a.download = `${id}.png`;
     a.click();
   };
   image.src = url;

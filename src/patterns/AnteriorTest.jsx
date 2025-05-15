@@ -22,7 +22,7 @@ function AnteriorTest() {
         width="250"
         height="500"
         style={{ background: "#f9f9f9", border: "1px solid #ccc" }}
-        id="mySvg"
+        id="mySvg101"
       >
         {/* گردن */} /////////
         <path
@@ -276,8 +276,8 @@ function AnteriorTest() {
           strokeWidth="1"
         />
       </svg>
-      <canvas id="canvas" style={{ display: "none" }}></canvas>
-      <button onClick={downloadImage}>دانلود تصویر</button>
+      <canvas id="canvas101" style={{ display: "none" }}></canvas>
+      <button onClick={() => downloadImage(101)}>دانلود تصویر</button>
     </>
   );
 }
