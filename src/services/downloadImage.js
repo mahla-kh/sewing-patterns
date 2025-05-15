@@ -9,8 +9,10 @@ export function downloadImage() {
   const image = new Image();
   image.onload = function () {
     const canvas = document.getElementById("canvas");
-    canvas.width = svg.clientWidth;
-    canvas.height = svg.clientHeight;
+    const scale = 3;
+
+    canvas.width = svg.clientWidth * scale;
+    canvas.height = svg.clientHeight * scale;
     const ctx = canvas.getContext("2d");
     ctx.drawImage(image, 0, 0);
     URL.revokeObjectURL(url);
