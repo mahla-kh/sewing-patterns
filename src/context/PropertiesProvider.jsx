@@ -9,6 +9,8 @@ export function PropertiesProvider({ children }) {
   const [Jkar, setJKar] = useState(17.5);
   const [rawkam, setRawKam] = useState(40.5);
   const [kam, setKam] = useState(40.5);
+  const [rawdorkam, setRawdorKam] = useState(80);
+  const [dorkam, setdorKam] = useState(80);
   const [rawba, setRawBa] = useState(20.5);
   const [ba, setBa] = useState(20.5);
   const [rawdorba, setRawdorBa] = useState(102);
@@ -23,6 +25,8 @@ export function PropertiesProvider({ children }) {
   const [Hsin, setHsin] = useState(26.4);
   const [rawshan, setRawShan] = useState(12.8);
   const [shan, setShan] = useState(12.8);
+  const [rawkshan, setRawkShan] = useState(12.8);
+  const [kshan, setkShan] = useState(12.8);
   const [rawgardan, setRawgardan] = useState(36.5);
   const [gardan, setgardan] = useState(36.5);
 
@@ -31,6 +35,7 @@ export function PropertiesProvider({ children }) {
       setKar(rawkar * 2);
       setJKar(rawJkar * 2);
       setKam(rawkam * 2);
+      setdorKam(rawdorkam * 2);
       setBa(rawba * 2);
       setdorBa(rawdorba * 2);
       setSin(rawSin * 2);
@@ -38,6 +43,7 @@ export function PropertiesProvider({ children }) {
       setAzSin(rawAzSin * 2);
       setHsin(rawHsin * 2);
       setShan(rawshan * 2);
+      setkShan(rawshan * 2);
       setgardan(rawgardan * 2);
     }, 500);
 
@@ -46,6 +52,7 @@ export function PropertiesProvider({ children }) {
     rawkar,
     rawJkar,
     rawkam,
+    rawdorkam,
     rawba,
     rawdorba,
     rawSin,
@@ -53,6 +60,7 @@ export function PropertiesProvider({ children }) {
     rawAzSin,
     rawHsin,
     rawshan,
+    rawkshan,
     rawgardan,
   ]);
 
@@ -68,6 +76,9 @@ export function PropertiesProvider({ children }) {
       ? bolandiKafHalghe
       : Math.sqrt(Hsin ** 2 - ((fasin / 2 - gardan / 5 + 0.5) * scale) ** 2);
 
+  // تیره ی پشت  ///////////////////////////////////////////
+  // آزادی سینه چک شود
+  const poshtTire = sin / 8 + 5.5 + 1.5;
   return (
     <propertiesContext.Provider
       value={{
@@ -84,8 +95,11 @@ export function PropertiesProvider({ children }) {
         azSin,
         Hsin,
         shan,
+        kshan,
         gardan,
         scale,
+        poshtTire,
+        dorkam,
         // Raw inputs for the form
         rawkar,
         setRawKar,
@@ -107,8 +121,12 @@ export function PropertiesProvider({ children }) {
         setRawHsin,
         rawshan,
         setRawShan,
+        rawkshan,
+        setRawkShan,
         rawgardan,
         setRawgardan,
+        rawdorkam,
+        setRawdorKam,
       }}
     >
       {children}

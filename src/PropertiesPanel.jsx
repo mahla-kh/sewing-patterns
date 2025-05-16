@@ -25,16 +25,18 @@ export default function PropertiesPanel() {
     setRawShan,
     rawgardan,
     setRawgardan,
+    rawdorkam,
+    setRawdorKam,
   } = useProperties();
 
   return (
     <div className="inputs">
-      {/* <label>دور کمر</label>
-        <input
-          placeholder="دور کمر"
-          value={rawdorkam}
-          onChange={(e) => setRawdorKam(+e.target.value)}
-        /> */}
+      <label>دور کمر</label>
+      <input
+        placeholder="دور کمر"
+        value={rawdorkam}
+        onChange={(e) => setRawdorKam(+e.target.value)}
+      />
       <label>"سرشانه"</label>
       <input
         placeholder="سرشانه"
