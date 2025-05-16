@@ -17,8 +17,8 @@ export function PropertiesProvider({ children }) {
   const [sin, setSin] = useState(96);
   const [rawfaSin, setRawfaSin] = useState(20.5);
   const [fasin, setfaSin] = useState(20.5);
-  const [rawAzSin, setRawAzSin] = useState(2);
-  const [azSin, setAzSin] = useState(2);
+  const [rawAzSin, setRawAzSin] = useState(3);
+  const [azSin, setAzSin] = useState(3);
   const [rawHsin, setRawHsin] = useState(26.4);
   const [Hsin, setHsin] = useState(26.4);
   const [rawshan, setRawShan] = useState(12.8);
