@@ -25,7 +25,7 @@ function PosteriorTork() {
   const durSin =
     (2 * scale * (bolandiKafHalghe - 3 * scale)) / (kam - 3 * scale);
 
-  const gKafHalgh = sin / 16 - 1 * scale;
+  const gKafHalgh = sin / 16 + 1 * scale;
   return (
     <>
       <svg
@@ -251,6 +251,8 @@ function PosteriorTork() {
           strokeWidth="1"
         />
       </svg>
+      <canvas id="canvas102" style={{ display: "none" }}></canvas>
+      <button onClick={() => downloadImage(102)}>دانلود تصویر</button>
     </>
   );
 }
