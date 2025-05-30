@@ -6,6 +6,7 @@ import BalataneAnterior from "./patterns/BalataneAnterior";
 import AnteriorTest from "./patterns/AnteriorTest";
 import PosteriorTork from "./patterns/PosteriorTork";
 import AnteriorTork from "./patterns/AnteriorTork";
+import SleeveTork from "./patterns/SleeveTork";
 
 export default function Firstpage() {
   return (
@@ -16,6 +17,7 @@ export default function Firstpage() {
         <AnteriorTest />
         <PosteriorTork />
         <AnteriorTork />
+        <SleeveTork />
       </Playground>
       <PropertiesPanel />
     </div>

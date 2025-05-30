@@ -29,6 +29,15 @@ export function PropertiesProvider({ children }) {
   const [kshan, setkShan] = useState(12.8);
   const [rawgardan, setRawgardan] = useState(36.5);
   const [gardan, setgardan] = useState(36.5);
+  // دور بازو
+  const [rawbazou, setRawbazou] = useState(34);
+  const [bazou, setbazou] = useState(34);
+  // دور مچ
+  const [rawwist, setRawwist] = useState(20);
+  const [wist, setwist] = useState(20);
+  //  بلندی آستین
+  const [rawbSleeve, setRawbSleeve] = useState(60);
+  const [bSleeve, setbSleeve] = useState(60);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -45,6 +54,9 @@ export function PropertiesProvider({ children }) {
       setShan(rawshan * 2);
       setkShan(rawshan * 2);
       setgardan(rawgardan * 2);
+      setbazou(rawbazou * 2);
+      setwist(rawwist * 2);
+      setbSleeve(rawbSleeve * 2);
     }, 500);
 
     return () => clearTimeout(timeout);
@@ -62,6 +74,9 @@ export function PropertiesProvider({ children }) {
     rawshan,
     rawkshan,
     rawgardan,
+    rawbazou,
+    rawwist,
+    rawbSleeve,
   ]);
 
   const scale = azSin / 2;
@@ -100,6 +115,9 @@ export function PropertiesProvider({ children }) {
         scale,
         poshtTire,
         dorkam,
+        bazou,
+        wist,
+        bSleeve,
         // Raw inputs for the form
         rawkar,
         setRawKar,
@@ -127,6 +145,12 @@ export function PropertiesProvider({ children }) {
         setRawgardan,
         rawdorkam,
         setRawdorKam,
+        rawbazou,
+        setRawbazou,
+        rawwist,
+        setRawwist,
+        rawbSleeve,
+        setRawbSleeve,
       }}
     >
       {children}

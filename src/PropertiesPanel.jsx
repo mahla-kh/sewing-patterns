@@ -27,6 +27,12 @@ export default function PropertiesPanel() {
     setRawgardan,
     rawdorkam,
     setRawdorKam,
+    rawwist,
+    setRawwist,
+    rawbazou,
+    setRawbazou,
+    rawbSleeve,
+    setRawbSleeve,
   } = useProperties();
 
   return (
@@ -102,6 +108,24 @@ export default function PropertiesPanel() {
         placeholder="دور باسن"
         value={rawdorba}
         onChange={(e) => setRawdorBa(+e.target.value)}
+      />
+      <label>دور مچ</label>
+      <input
+        placeholder="دور باسن"
+        value={rawwist}
+        onChange={(e) => setRawwist(+e.target.value)}
+      />
+      <label>دور بازو</label>
+      <input
+        placeholder="دور باسن"
+        value={rawbazou}
+        onChange={(e) => setRawbazou(+e.target.value)}
+      />
+      <label>بلندی آستین</label>
+      <input
+        placeholder="دور باسن"
+        value={rawbSleeve}
+        onChange={(e) => setRawbSleeve(+e.target.value)}
       />
     </div>
   );
