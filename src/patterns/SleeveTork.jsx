@@ -8,9 +8,9 @@ function SleeveTork() {
   const Pfa2 = (bazou + 4) % 10;
   const BigDiam =
     (((bSleeve * 4) / 5) ** 2 + ((bazou + 4 - wist) / 2) ** 2) ** (1 / 2);
-  const GhaedeKoochak = ((bazou + 4 - wist) / 2) * (wist / (2 * BigDiam));
-  const wistX = GhaedeKoochak ** 2 / (wist / 2);
-  const wistY = ((wist / 2 - wistX) * wistX) ** (1 / 2);
+  const GhaedeKoochak = ((bazou + 4 - wist) / 2) * (wist / (4 * BigDiam));
+  const wistX = GhaedeKoochak ** 2 / (wist / 4);
+  const wistY = ((wist / 4 - wistX) * wistX) ** (1 / 2);
   console.log(bazou, Jfa, Pfa2);
   return (
     <>
