@@ -1,4 +1,5 @@
 import { useProperties } from "../context/PropertiesProvider";
+import { downloadImage } from "../services/downloadImage";
 
 function SleeveTork() {
   const { wist, bazou, bSleeve, scale } = useProperties();
@@ -168,6 +169,8 @@ function SleeveTork() {
           strokeWidth="1"
         />
       </svg>
+      <canvas id="canvas104" style={{ display: "none" }}></canvas>
+      <button onClick={() => downloadImage(104)}>دانلود تصویر</button>
     </>
   );
 }

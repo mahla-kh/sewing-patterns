@@ -1,4 +1,5 @@
 import { useProperties } from "../context/PropertiesProvider";
+import { downloadImage } from "../services/downloadImage";
 
 function AnteriorTork() {
   const {
@@ -153,7 +154,7 @@ function AnteriorTork() {
         />
         {/* حلق آستین */}
         <line
-          x1={70 + (sin / 10 + 1 + arzShan) * scale + pancX}
+          x1={70 + (sin / 10 + 1 + arzShan) * scale + pancX * 2}
           y1={70 + pancY * scale}
           x2={70 + (sin / 4 - 4) * scale}
           y2={70 + (5 + bolandiKafHalghe - 7) * scale}
@@ -250,10 +251,10 @@ function AnteriorTork() {
         />
         {/* شانه بعد پنس گردنی */}
         <line
-          x1={70 + (sin / 10 + 1) * scale + pancX}
+          x1={70 + (sin / 10 + 1) * scale + pancX * 2}
           y1={70 + 1 * scale}
           //   y1={70 + (5 + bolandiKafHalghe) * scale}
-          x2={70 + (sin / 10 + 1 + arzShan) * scale + pancX}
+          x2={70 + (sin / 10 + 1 + arzShan) * scale + pancX * 2}
           y2={70 + pancY * scale}
           //   y2={70 + (2 + kam + ba) * scale}
           stroke="red"
@@ -271,7 +272,7 @@ function AnteriorTork() {
         />
         {/* سرشانه ای */}
         <line
-          x1={70 + (sin / 10 + 1) * scale + pancX}
+          x1={70 + (sin / 10 + 1) * scale + pancX * 2}
           y1={70 + 1 * scale}
           x2={70 + (sin / 10 + 1) * scale}
           y2={70 + Hsin * scale}
@@ -279,6 +280,8 @@ function AnteriorTork() {
           strokeWidth="1"
         />
       </svg>
+      <canvas id="canvas103" style={{ display: "none" }}></canvas>
+      <button onClick={() => downloadImage(103)}>دانلود تصویر</button>
     </>
   );
 }

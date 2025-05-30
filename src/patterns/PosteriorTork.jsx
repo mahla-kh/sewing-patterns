@@ -251,6 +251,8 @@ function PosteriorTork() {
           strokeWidth="1"
         />
       </svg>
+      <canvas id="canvas102" style={{ display: "none" }}></canvas>
+      <button onClick={() => downloadImage(102)}>دانلود تصویر</button>
     </>
   );
 }
